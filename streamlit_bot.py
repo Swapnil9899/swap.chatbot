@@ -61,7 +61,7 @@ if choice == "Home":
     <div class="chat-row
         {'' if chat.origin =='ai' else 'row-reverse'}">
         <img class="chat-icon" src="{
-            'ai_icon.png' if chat.origin == 'ai'
+            'https://www.mahifreelancehub.com/assets/img/mahesh-removebg-preview.png' if chat.origin == 'ai'
                         else 'user_icon.png'}
             "width=32 height=32>
         <div class="chat-bubble
