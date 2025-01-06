@@ -61,8 +61,8 @@ if choice == "Home":
     <div class="chat-row
         {'' if chat.origin =='ai' else 'row-reverse'}">
         <img class="chat-icon" src="{
-            'https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png' if chat.origin == 'ai'
-                        else 'user_icon.png'}
+            'https://cdn2.iconfinder.com/data/icons/artificial-intelligence-173/128/chatbot-AI-chat_bubble-chat-robotics-robot-communication-1024.png' if chat.origin == 'ai'
+                        else 'https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png'}
             "width=32 height=32>
         <div class="chat-bubble
         {'ai-bubble' if chat.origin == 'ai' else 'human-bubble'}">
