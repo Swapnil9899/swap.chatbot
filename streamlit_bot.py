@@ -15,7 +15,7 @@ class Message:
 
 def load_css():
     try:
-         with open("static/style.css", "r") as f:
+         with open("style.css", "r") as f:
             css = f"<style>{f.read()}</style>"
             st.markdown(css, unsafe_allow_html=True)
     except FileNotFoundError: st.error("CSS file not found.") 
