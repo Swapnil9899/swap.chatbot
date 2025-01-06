@@ -1,7 +1,8 @@
 .chat-row {
     display: flex;
-    margin: 5px;
+    margin: 5px 0; /* Ensure vertical spacing without excess */
     width: 100%;
+    box-sizing: border-box; /* Include padding and border in total width */
 }
 
 .row-reverse {
@@ -9,25 +10,32 @@
 }
 
 .chat-bubble {
-    font-family: "Source Sans Pro", sans-serif, "Segoe UI", "Roboto", sans-serif;
+    font-family: "Source Sans Pro", "Segoe UI", "Roboto", sans-serif; /* Fixed redundant sans-serif */
     border: 1px solid transparent;
     padding: 5px 10px;
-    margin: 0px 7px;
+    margin: 0 7px;
     max-width: 70%;
+    box-sizing: border-box; /* Ensures consistent sizing with padding */
 }
 
 .ai-bubble {
-     background: orangered;
-     color: white;
+    background: orangered;
+    color: white;
     border-radius: 10px;
+    word-wrap: break-word; /* Ensures long text wraps properly */
 }
 
 .human-bubble {
-    background: linear-gradient(135deg, rgb(0, 178, 255) 0%, rgb(0, 106, 255) 100%); 
+    background: linear-gradient(135deg, rgb(0, 178, 255) 0%, rgb(0, 106, 255) 100%);
     color: white;
-    border-radius: 20px;
+    border-radius: 10px; /* Made consistent with .ai-bubble */
+    word-wrap: break-word; /* Ensures long text wraps properly */
 }
 
 .chat-icon {
     border-radius: 5px;
+    width: 32px; /* Added dimensions for clarity */
+    height: 32px; /* Added dimensions for clarity */
+    display: inline-block; /* Ensures alignment */
 }
+
